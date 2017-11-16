@@ -18136,7 +18136,7 @@ declare namespace kendo.mobile.ui {
         autoFilter?: boolean;
         field?: string;
         ignoreCase?: boolean;
-        operator?: string;
+        operator?: ((txt: string, search: string) => boolean) | string;
     }
 
     interface ListViewMessages {
